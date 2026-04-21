@@ -1,0 +1,74 @@
+$date
+	Sat Apr 18 22:57:57 2026
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module testbench $end
+$var wire 4 ! y [3:0] $end
+$var reg 4 " a [3:0] $end
+$var reg 4 # b [3:0] $end
+$var reg 3 $ opcode [2:0] $end
+$scope module uut $end
+$var wire 4 % inp1 [3:0] $end
+$var wire 4 & inp2 [3:0] $end
+$var wire 3 ' opcode [2:0] $end
+$var reg 1 ( carry_out $end
+$var reg 4 ) out [3:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+b11 )
+0(
+b0 '
+b1 &
+b10 %
+b0 $
+b1 #
+b10 "
+b11 !
+$end
+#10
+b10 !
+b10 )
+b1 $
+b1 '
+b11 "
+b11 %
+#20
+b1001 !
+b1001 )
+b10 $
+b10 '
+b1001 #
+b1001 &
+b1011 "
+b1011 %
+#30
+b1011 !
+b1011 )
+b11 $
+b11 '
+b1 #
+b1 &
+#40
+b10 !
+b10 )
+b100 $
+b100 '
+b11 "
+b11 %
+#50
+b1100 !
+b1100 )
+b101 $
+b101 '
+#60
