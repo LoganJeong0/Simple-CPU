@@ -1,13 +1,13 @@
 module ALU(
-    input [7 : 0] inp1, inp2,
-    input [2 : 0] opcode,
-    output reg [7 : 0] out,
+    input [9: 0] inp1, inp2,
+    input [2:0] opcode,
+    output reg [9:0] out,
     output reg carry_out
 
 );
 
     always @(*) begin
-        out = 4'b00000000;
+        out = 10'b0000000000;
         carry_out = 1'b0;
 
         case(opcode)
@@ -17,7 +17,7 @@ module ALU(
             3'b011: out = inp1 | inp2;
             3'b100: out = inp1 ^ inp2;
             3'b101: out = ~inp1;
-            default: out = 8'b00000000;
+            default: out = 10'b0000000000;
         endcase
     end
 endmodule
